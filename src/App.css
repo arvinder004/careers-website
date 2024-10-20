@@ -141,3 +141,26 @@ a{
 .Contact-section li{
     cursor: pointer;
 }
+
+.Apply-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 80vh;
+}
+
+.Apply-section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Apply-section input,label{
+    height: 3rem;
+    width: 30rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
