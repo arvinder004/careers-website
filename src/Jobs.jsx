@@ -1,4 +1,6 @@
 import './App.css'
+import Header from './Header';
+import Footer from './Footer';
 
 function Jobs() {
     const Jobs = [
@@ -78,11 +80,13 @@ function Jobs() {
 
     return (
         <>
-            <div style={{display:"flex", justifyContent:"center"}}>
-            <div className='Job-card-parent'>
-                {jobComponent}
+            <Header />
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <div className='Job-card-parent'>
+                    {jobComponent}
+                </div>
             </div>
-            </div>
+            <Footer/>
         </>
     )
 
@@ -97,7 +101,7 @@ function JobCard({ title, location, salary }) {
                 <h1>{title}</h1>
                 <p>{location}</p>
                 <h2>{salary}</h2>
-                <button>Know More</button>
+                <button className='btn'>Know More</button>
             </div>
 
         </>

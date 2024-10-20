@@ -1,8 +1,12 @@
+import { BrowserRouter, Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
 import './App.css'
+import Home from './Home'
 import Jobs from './Jobs'
 import About from './About'
+import Contact from './ContactUs';
 import Header from './Header'
 import Footer from './Footer'
+
 
 function App() {
 
@@ -11,10 +15,41 @@ function App() {
   return (
     <>
       <div>
-        <Header />
+        {/* <Header />
         <About />
         <Jobs />
-        <Footer/>
+        <Footer/> */}
+        <BrowserRouter>
+          <Routes path='/' element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/jobs" element={<Jobs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NoPage />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </>
+  )
+}
+
+function Layout() {
+  return (
+    <>
+      <div>
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+    </>
+  )
+}
+
+function NoPage() {
+  return (
+    <>
+      <div>
+        Error! Page Not Found
       </div>
     </>
   )

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     background-color: rgb(163, 163, 163);
+    font-family: "Rethink Sans", sans-serif;
 }
 
 .Navbar{
@@ -20,6 +23,13 @@ body{
 .Navbar li{
     list-style: none;
     padding-right: 5rem;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+    cursor: pointer;
 }
 
 .logo{
@@ -27,25 +37,43 @@ body{
 }
 
 .About-section{
-    background-color: brown;
     display: flex;
     align-items: center;
     gap: 2rem;
     height: 80vh;
 }
 
-.Banner-img{
-    width: 70vw;
-    height: 80vh;
+.About-section h1{
+    font-size: 4rem;
+    text-align: center;
 }
 
-.heading{
-    height: 10vh;
-    font-size: 3rem;
-    background-color: beige;
+.About-section p{
+    font-size: 2rem;
+    margin: 4rem;
+}
+
+
+.Home-section{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
+    height: 80vh;
+}
+
+.Home-section h1{
+    font-size: 4rem;
+}
+
+.Home-section p{
+    font-size: 2rem;
+}
+
+
+.Banner-img{
+    width: 70vw;
+    height: 80vh;
 }
 
 .Job-card-parent{
@@ -59,18 +87,26 @@ body{
     background-color: white;
     border-radius: 15px;
     width: 20rem;
-    height: 12rem;
+    height: 15rem;
     min-width: fit-content;
-    max-height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.btn{
+    border-radius: 15px;
+    font-size: 1rem;
+    background-color: rgba(163, 163, 163, 0.5);
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
 .footer{
     background-color: white;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,4 +114,30 @@ body{
 
 .footer p{
     font-size: 1.5rem;
+}
+
+.Contact-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 80vh;
+}
+
+.Contact-section h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.Contact-section ul{
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-decoration: underline overline;
+    color:rgba(114, 56, 8, 0.616);
+}
+
+.Contact-section li{
+    cursor: pointer;
 }

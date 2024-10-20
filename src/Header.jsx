@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
+
 function Header() {
 
     return (
         <>
             <div className='Navbar'>
-                <img src="./images/logo.jpeg" className='logo' />
+                <Link to={'/'}><img src="./images/logo.jpeg" className='logo' /></Link>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Careers</li>
-                    <li>Contact Us</li>
+                    <li><Link to={'/'}>Home</Link></li>
+                    <li><Link to={'/about'}>About</Link></li>
+                    <li><Link to={'/jobs'}>Careers</Link></li>
+                    <li><Link to={'/contact'}>Contact Us</Link></li>
                 </ul>
             </div>
         </>
