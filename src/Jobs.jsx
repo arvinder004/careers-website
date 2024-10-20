@@ -102,7 +102,7 @@ function JobCard({ title, location, salary }) {
                 <h1>{title}</h1>
                 <p>{location}</p>
                 <h2>{salary}</h2>
-                <Link to={'/apply'}><button className='btn'>Know More</button></Link>
+                <Link to={'/apply'}><button className='btn'>Apply Now</button></Link>
             </div>
 
         </>
